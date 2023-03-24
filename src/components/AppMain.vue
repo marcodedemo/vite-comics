@@ -33,7 +33,7 @@ main{
         display: flex;
         align-items: center;
         
-        height: 150px;
+        height: 300px;
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;

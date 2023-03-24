@@ -66,7 +66,7 @@ section{
         margin-left: auto;
         margin-right: auto;
 
-        height: 200px;
+        padding: 60px;
 
         .card{
             display: flex;
