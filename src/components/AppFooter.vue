@@ -132,10 +132,10 @@ footer{
     
     #footer-top{
 
-        background-image: url("/public/img/dc-logo-bg.png"),url("public/img/footer-bg.jpg");
-        background-repeat: no-repeat,no-repeat;
-        background-size: auto,cover;
-        background-position-x: right,center;
+        background-image: url("public/img/footer-bg.jpg");
+        background-repeat:no-repeat;
+        background-size:cover;
+
 
 
 
@@ -144,7 +144,9 @@ footer{
 
         .container-centered{
 
-
+            background-image: url("/public/img/dc-logo-bg.png");
+            background-repeat: no-repeat;
+            background-position-x:right ;
 
             max-width: 1200px;
             margin-left: auto;
