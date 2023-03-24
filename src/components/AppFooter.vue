@@ -12,11 +12,15 @@
 </script>
 
 <template>
-  <div>
+  <footer>
+    ciao
     
-  </div>
+  </footer>
 </template>
 
 <style lang="scss" scoped>
 
+footer{
+    background-color: #303030;
+}
 </style>

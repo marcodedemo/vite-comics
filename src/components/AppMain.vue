@@ -12,11 +12,14 @@
 </script>
 
 <template>
-  <div>
-    
-  </div>
+  <main>
+    ciao
+  </main>
 </template>
 
 <style lang="scss" scoped>
 
+main{
+    background-color: black;
+}
 </style>
