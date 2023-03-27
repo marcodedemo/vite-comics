@@ -1,5 +1,8 @@
 
 <script>
+
+  import AppSeriesCard from './AppSeriesCard.vue';
+
   export default{
     data(){
       return{
@@ -8,6 +11,10 @@
 
       }
     },
+
+    components:{
+      AppSeriesCard,
+    }
     
   }
 
@@ -21,15 +28,22 @@
 
     <div id="container-centered">
 
-      <div id="series">
-
-        <div id="tag">
-          <strong>Current Series</strong>
-        </div>
-
+      <div id="tag">
+        <strong>Current Series</strong>
       </div>
 
+      <div id="series">
+
+        <AppSeriesCard :title="'ciao'" :img="'https://picsum.photos/200'"></AppSeriesCard>
+        
+      </div>
+      
+      <div id="load-more">
+        <button>Load More</button>
+      </div>
+      
     </div>
+    
 
     </main>
 </template>
@@ -38,7 +52,9 @@
 
 main{
 
-    background-color: #1c1c1c;
+
+  background-color: #1c1c1c;
+
     
 
     #jumbotron{
@@ -52,19 +68,15 @@ main{
 
     #container-centered{
         display: flex;
-        align-items: center;
+        flex-direction: column;
 
         position: relative;
         
-        height: 300px;
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
 
-        padding: 0 20px;
-
-      #series{
-
+        padding: 40px 20px;
 
         #tag{
           position: absolute;
@@ -85,9 +97,38 @@ main{
           padding: 4px 16px;
           
         }
-      }
+
+
+
+        #series{
+
+
+
+        }
         
       
+        #load-more {
+    
+        text-align: center;
+
+        margin: 30px 0;
+    
+        & button{
+          
+          color: white;
+          background-color: #0582f9;
+          
+          border: none;
+          
+          text-transform: uppercase;
+          font-weight: bold;
+          
+          padding: 10px 30px;
+          
+          
+        }
+      }
     }
+
 }
 </style>
