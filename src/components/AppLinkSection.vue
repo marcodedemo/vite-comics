@@ -85,6 +85,8 @@ section{
                 .logo{
                     width: 60px;
                     height: 60px;
+
+                    flex-shrink: 0;
                     
                     img{
                         width: 100%;
@@ -100,6 +102,32 @@ section{
                 }
             }
         }
+    }
+}
+
+
+@media screen and (max-width: 992px){
+    
+    section #container-centered{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section #container-centered .card{
+        width: calc(100% / 3);
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    section #container-centered{
+        flex-direction: column;
+        gap: 0;
+
+        padding: 0;
+    }
+    section #container-centered .card{
+        width: 100%;
     }
 }
 </style>

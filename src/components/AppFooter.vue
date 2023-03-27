@@ -259,6 +259,7 @@ footer{
                 gap: 20px;
                 
                 span{
+                    flex-shrink: 0;
                     text-transform: uppercase;
                     font-weight: bold;
                     font-size: 1.4em;
@@ -268,11 +269,19 @@ footer{
 
                 #icons{
                     display: flex;
+                    flex-wrap: wrap;
                     gap: 15px;
 
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width:768px) {
+  
+    footer #footer-bottom .container-centered #follow span{
+        display: none;
     }
 }
     

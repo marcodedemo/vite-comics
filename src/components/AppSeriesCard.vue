@@ -53,5 +53,20 @@ export default{
 
 }
 
+@media screen and (max-width:768px) {
+    
+    #card{
+        width: calc(100% / 4 - 20px * 3 / 4);
+    }
+  
+}
+
+@media screen and (max-width:576px) {
+  
+    #card{
+        width: calc(100% / 3 - 20px * 2 / 3);
+    }
+  
+}
 
 </style>
