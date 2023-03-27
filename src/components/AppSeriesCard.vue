@@ -31,13 +31,25 @@ export default{
 
 
 
-<style>
+<style lang="scss" scoped>
 
 #card{
     display: flex;
     flex-direction: column;
+    gap: 15px;
 
-    align-items: center;
+    width: calc(100% / 6 - (20px * 5 / 6));
+
+    img{
+        width: 100%;
+    }
+
+    #title{
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: .8em;
+    }
 
 }
 
