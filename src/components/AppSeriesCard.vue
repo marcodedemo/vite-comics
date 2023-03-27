@@ -23,7 +23,10 @@ export default{
 <template>
     <div id="card">
 
-        <img :src="img" alt="">
+        <div id="thumb">
+            <img :src="img" alt="">
+        </div>
+
         <span id="title">{{title}}</span>
         
     </div>
@@ -40,8 +43,18 @@ export default{
 
     width: calc(100% / 6 - (20px * 5 / 6));
 
-    img{
+    #thumb{
+
         width: 100%;
+        height: 200px;
+
+
+        img{
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+        }
     }
 
     #title{
