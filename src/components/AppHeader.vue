@@ -45,7 +45,7 @@
       </div>
       
       <!-- navbar links -->
-      <navbar>
+      <nav>
 
         <div id="pc-menu">
 
@@ -72,7 +72,7 @@
           </div>
             
         </div>
-      </navbar>
+      </nav>
       
       
     </div>
