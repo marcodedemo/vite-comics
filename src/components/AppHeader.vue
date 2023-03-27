@@ -16,9 +16,17 @@
           "fans",
           "news",
           "shop",
-        ]
+        ],
+
+        dropdownShow: false,
       }
     },
+
+    methods:{
+      showDropdownContent(){
+        this.dropdownShow = !this.dropdownShow;
+      }
+    }
     
   }
 
@@ -51,11 +59,11 @@
 
         <div id="mobile-menu">
 
-          <div id="hamburger-menu">
+          <div id="hamburger-menu" @click="showDropdownContent()">
 
             <i class="fa-solid fa-bars"></i>
           
-            <ul id="dropdown-content">
+            <ul v-show="dropdownShow" id="dropdown-content">
               <li v-for="link in links">
                 <a href="#">{{ link }}</a>
               </li>
@@ -153,7 +161,6 @@ header{
         }
 
         #dropdown-content{
-          display: none;
 
           background-color: white;
           position: absolute;
@@ -164,6 +171,8 @@ header{
 
           li{
             padding: 0 20px;
+
+            text-transform: capitalize;
 
             &:hover{
               background-color: rgba(128, 128, 128, 0.282);
