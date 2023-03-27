@@ -39,7 +39,9 @@
       <!-- navbar links -->
       <navbar>
         <ul id="links">
-          <li v-for="link in links">{{ link }}</li>
+          <li v-for="link in links">
+            <a href="#">{{ link }}</a>
+          </li>
         </ul>
       </navbar>
       
@@ -64,6 +66,8 @@ header{
   margin-left: auto;
   margin-right: auto;
 
+  padding: 0 20px;
+
 
 
   #logo{
@@ -77,13 +81,15 @@ header{
   #links{
     display: flex;
     flex-flow: row nowrap;
-    gap: 30px;
+    
 
     li{
       position: relative;
       text-transform: uppercase;
       font-weight: bold;
       font-size: .9em;
+
+      padding: 0 12px;
 
       &:hover{
         color:#0582f9;

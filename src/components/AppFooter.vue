@@ -56,7 +56,7 @@
                     "DC Power Visa",
                 ]
             }
-        ]
+        ],
 
       }
     },
@@ -80,7 +80,9 @@
                         <strong>{{ linkList.title }}</strong>
                         
                         <ul>
-                            <li v-for="link in linkList.links">{{ link }}</li>
+                            <li v-for="link in linkList.links">
+                                <a href="#">{{ link }}</a>
+                            </li>
                         </ul>
                         
                         
@@ -96,7 +98,11 @@
 
                 
                 <div id="sign-up">
-                    <button>Sign-Up Now!</button>
+                    <button>
+                       <a href="#">
+                           Sign-Up Now!
+                       </a> 
+                    </button>
                 </div>
                 
                 <div id="follow">
@@ -104,11 +110,41 @@
 
                     <div id="icons">
 
-                        <div><img src="/public/img/footer-facebook.png" alt="facebook-logo"></div>
-                        <div><img src="/public/img/footer-twitter.png" alt="twitter-logo"></div>
-                        <div><img src="/public/img/footer-youtube.png" alt="youtube-logo"></div>
-                        <div><img src="/public/img/footer-pinterest.png" alt="pinterest-logo"></div>
-                        <div><img src="/public/img/footer-periscope.png" alt="periscope-logo"></div>
+                        <div id="icons">
+
+                        <div>
+                            <a href="#">
+                                <img src="/public/img/footer-facebook.png" alt="facebook-logo">
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <img src="/public/img/footer-twitter.png" alt="twitter-logo">
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <img src="/public/img/footer-youtube.png" alt="youtube-logo">
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <img src="/public/img/footer-pinterest.png" alt="pinterest-logo">
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <img src="/public/img/footer-periscope.png" alt="periscope-logo">
+                            </a>
+                        </div>
+
+                        
+                    </div>
+
                         
                     </div>
 
@@ -136,6 +172,9 @@ footer{
         background-repeat:no-repeat;
         background-size:cover;
 
+        padding: 0 20px;
+
+
 
 
 
@@ -146,7 +185,8 @@ footer{
 
             background-image: url("/public/img/dc-logo-bg.png");
             background-repeat: no-repeat;
-            background-position-x:right ;
+            background-position: center;
+            background-position-x:right;
 
             max-width: 1200px;
             margin-left: auto;
@@ -174,7 +214,7 @@ footer{
                         text-transform: uppercase;
                     }
                     
-                    li{
+                    li a{
                         color: gray;
                     }
                 }
@@ -183,6 +223,8 @@ footer{
     }
 
     #footer-bottom{
+
+        padding: 0 20px;
 
         .container-centered{
             display: flex;
@@ -200,11 +242,15 @@ footer{
                     text-transform: uppercase;
                     font-weight: bold;
                     
-                    color: white;
                     border: 2px solid #0582f9;
                     background-color: transparent;
                     
                     padding: 20px;
+                    
+                    a{
+                        color: white;
+                        
+                    }
                 }
             }
             
